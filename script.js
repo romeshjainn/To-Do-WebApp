@@ -1,4 +1,5 @@
 // Creating Elements
+let heading = document.createElement("h2");
 let header = document.createElement("div");
 let createBtn = document.createElement("button");
 let deleteBtn = document.createElement("button");
@@ -8,6 +9,7 @@ let inputBox = document.createElement("input");
 let discriptionBox = document.createElement("textarea");
 
 // Giving Classes to Elements
+heading.innerText = "To Do List"
 header.className = "header";
 createBtn.className = "createBtn";
 createBtn.innerText = "Create Card";
@@ -21,6 +23,7 @@ inputBox.placeholder = "Enter The Title";
 discriptionBox.placeholder = "Enter The Description";
 
 // Appending Elements
+document.body.appendChild(heading);
 document.body.appendChild(header);
 header.appendChild(createBtn);
 header.appendChild(deleteBtn);

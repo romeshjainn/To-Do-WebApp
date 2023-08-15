@@ -12,6 +12,10 @@ body{
     align-items: center;
     padding-top: 2.5rem;
 }
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1rem;
+}
 .header{
     border: 2px solid;
     width: 80%;
@@ -83,9 +87,12 @@ body{
     body{
         height: 100vh;
     }
-    .container{
-        min-height: 65%;
+    h2{
+        margin-bottom: .5rem;
     }
+   .container{
+    padding: 38% 0px;
+   }
     .createBtn,
     .deleteBtn {
         font-size: .7rem;
