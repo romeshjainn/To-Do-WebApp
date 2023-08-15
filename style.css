@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: grey;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.container{
+    border: 2px solid;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+.card{
+    border: 2px solid;
+    min-height: 300px;
+    max-height: 30%;
+    aspect-ratio: .6;
+}
