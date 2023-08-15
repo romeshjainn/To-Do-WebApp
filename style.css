@@ -23,7 +23,7 @@ body{
 }
 .createBtn,.deleteBtn{
     border: 2px solid;
-    width: 20%;
+    padding: 0px .5rem;
     height: 100%;
 }
 .createBtn:hover, .deleteBtn:hover{
