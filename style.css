@@ -6,21 +6,45 @@
 body{
     background-color: grey;
     height: 100vh;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+.header{
+    border: 2px solid;
+    width: 90%;
+    height: 10%;
+    border-bottom: none;
+    padding: .7rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.createBtn,.deleteBtn{
+    border: 2px solid;
+    width: 20%;
+    height: 100%;
+}
+.createBtn:hover, .deleteBtn:hover{
+    color: white;
+    background-color: grey;
+    cursor: pointer;
+    border: 2px solid;
 }
 .container{
     border: 2px solid;
     width: 90%;
-    height: 90%;
     display: flex;
     flex-wrap: wrap;
     padding: 1rem;
+    gap: 1rem;
+    place-items: center;
+    min-height: 70%;
 }
 .card{
     border: 2px solid;
-    min-height: 300px;
-    max-height: 30%;
+    max-height: 300px;
     aspect-ratio: .6;
     padding: .5rem;
 }
@@ -30,6 +54,7 @@ body{
     padding: 1rem;
     border: 2px solid black;
     outline: none;
+    background-color: grey;
 }
 .discriptionBox{
     width: 100%;
@@ -37,5 +62,9 @@ body{
     padding: 1rem;
     border: 2px solid black;
     border-top: 0px;
+    background-color: grey;
     outline: none;
+}
+::placeholder{
+    color: black;
 }
